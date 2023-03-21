@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# Ejercicio Integración TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objetivo
+Vamos a convertir la aplicación de inventario Pokémon realizada en JavaScript a TypeScript, para mejorar la robustez del código y facilitar su escalabilidad.
 
-## Available Scripts
+## Consigna
+Partiendo del siguiente código realizado mayoritariamente en TypeScript, vamos a tener que completar la transformación de los archivos de JavaScript utilizando los tipos correctos.
+Te proponemos resolver los siguientes puntos: 
+- Para iniciar, deberíamos convertir todos los archivos que aún quedan con extensión .js a .ts y los archivos .jsx a .tsx.
+- Tipificar el objeto itemCategory retornado por las funciones getItemCategories y getItemCategory.
+- Mostrar el listado de los itemCategories devueltos por la API que ya está implementada en el código utilizando el componente ListadoCategoriasItem.
+- Tipificar las props del componente ListadoCategoriasItem.
+- Finalizar la implementación de la API de Context de React para compartir la información con la pantalla de - VistaCategoria. Para ello deberemos crear la función reductora, implementar la action SELECCIONAR_CATEGORIA y llamar a la función del contexto en nuestro ListadoCategorias.
+- Mantener la aplicación funcionando correctamente, sin errores y con TypeScript.
 
-In the project directory, you can run:
+### Bonus track
+¿Se animan a llamar a la API individual de items para obtener las imágenes de cada uno? Te dejamos el endpoint necesario: https://pokeapi.co/api/v2/item/{id o name del item}.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
