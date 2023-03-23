@@ -1,12 +1,16 @@
 import React from "react";
 import {extractCategoriaId} from "./ListadoCategoriasItem";
 import {useQuery} from "react-query";
-import {getItemCategory} from "../queries/items.queries";
+import {Category, getItemCategory} from "../queries/items.queries";
 import PropTypes from "prop-types";
 
-// Documentar y agregar tipos
-const ListadoItems = ({categoria}) => {
-    const idCategoria = extractCategoriaId(categoria.url);
+interface Props{
+  categoria: Category;
+}
+const ListadoItems = ({categoria}: Props) => {
+    
+    const idCategoria: string = extractCategoriaId(categoria.url);
+    
     const {
         data,
         isLoading,
@@ -27,6 +31,11 @@ const ListadoItems = ({categoria}) => {
     ): null;
 }
 
-// Incorporar validacion de tipos
-
 export default ListadoItems;
+ListadoItems.propTypes = {
+  categoria: PropTypes.shape({
+    name: PropTypes.string,
+    url: PropTypes.string,
+    types: PropTypes.array,
+  }
+)}

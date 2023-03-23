@@ -18,7 +18,7 @@
   "author": "Tomas de Priede",
   "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.1",
@@ -28,8 +28,8 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
     "react-query": "^3.34.16",
+    "react-scripts": "^5.0.0",
     "typescript": "^4.6.2",
     "web-vitals": "^2.1.4"
   },
